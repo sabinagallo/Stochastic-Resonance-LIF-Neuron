@@ -39,15 +39,15 @@ Pooling spikes across multiple neurons produces more stable signal representatio
 The neuron is modeled using a **Leaky Integrate-and-Fire (LIF) model**, which describes membrane potential dynamics as a threshold system integrating incoming current.
 
 Subthreshold membrane dynamics:
-
+```
 τₘ dV/dt = −(V − Eₗ) + I(t)/gₗ
-
+```
 A spike occurs when the membrane potential reaches the threshold \(V_{th}\), after which the neuron resets and enters a refractory period.
 
 The neuron receives a weak periodic input:
-
+```
 I(t) = I_bias + A sin(2πft)
-
+```
 Noise is introduced as **Gaussian white noise** added to the input current
 
 ## Methods
@@ -81,10 +81,10 @@ The results reveal the characteristic **stochastic resonance curve**.
 ![Stochastic Resonance Curve](figures/sr_curve.png)  
 The analysis shows that synchronization between spikes and the input signal is strongest at an intermediate noise level. Too little noise prevents threshold crossings, while excessive noise disrupts temporal precision.
 
-**Popilation response**
-To investigate robustness at the network level, the model was extended to a population of independent neurins receiving the same signal, but different noise realizations.  
+**Population response**
+To investigate robustness at the network level, the model was extended to a population of independent neurons receiving the same signal, but different noise realizations.  
 ![Population SR Readout](figures/population_sr.png)  
-The raster plot and pooled PSTH show how population activity reflects the input signal. At intermediate noise levels, spikes become temporally aligned with the periodic stimulus, producing clear oscillatory structure in the pooed population response.
+The raster plot and pooled PSTH show how population activity reflects the input signal. At intermediate noise levels, spikes become temporally aligned with the periodic stimulus, producing clear oscillatory structure in the pooled population response.
 
 **Low noise levels**
 - spiking is rare and synchronization is weak.
