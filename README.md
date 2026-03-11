@@ -81,18 +81,18 @@ The results reveal the characteristic **stochastic resonance curve**.
 ![Stochastic Resonance Curve](figures/sr_curve.png)  
 The analysis shows that synchronization between spikes and the input signal is strongest at an intermediate noise level. Too little noise prevents threshold crossings, while excessive noise disrupts temporal precision.
 
-**Population response**
+**Population response**  
 To investigate robustness at the network level, the model was extended to a population of independent neurons receiving the same signal, but different noise realizations.  
 ![Population SR Readout](figures/population_sr.png)  
 The raster plot and pooled PSTH show how population activity reflects the input signal. At intermediate noise levels, spikes become temporally aligned with the periodic stimulus, producing clear oscillatory structure in the pooled population response.
 
-**Low noise levels**
+**Low noise levels**  
 - spiking is rare and synchronization is weak.
 
-**Intermediate noise levels**
+**Intermediate noise levels**  
 - spike timing becomes strongly phase-locked to the input signal, maximizing synchronization.
 
-**High noise levels**
+**High noise levels**  
 - firing activity increases but temporal precision degrades due to noise-dominated spike timing.
 
 ## Tech Stack
