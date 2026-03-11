@@ -143,7 +143,7 @@ Full methodological description and results.
 
 **Simulation notebook**
 Python notebook containing the full simulation and analysis pipeline.
-[View the notebook](Project_Brain_modeling.ipynb)
+[View the notebook](Project_Brain_modelling.ipynb)
 
 ## Authors
 Sabina Gallo  
